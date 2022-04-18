@@ -1,0 +1,8 @@
+# S3-compatible object storage configuration
+objectStorage:
+  hostname: whatever
+  accessKey: whatever
+  secretAccessKey: whatever
+  bucketName: whatever
+  port: "443"
+  isSecure: true

@@ -1,0 +1,6 @@
+apiVersion: v2
+name: sno-quay
+description: Deploy Quay to Single-Node OpenShift
+type: application
+version: 0.0.1
+appVersion: "4.10.8" # Latest OpenShift version this was tested on

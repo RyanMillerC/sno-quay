@@ -1,8 +1,9 @@
-# S3-compatible object storage configuration
+# S3-compatible object storage configuration. Replace my values with yours
+# below.
 objectStorage:
-  hostname: whatever
-  accessKey: whatever
-  secretAccessKey: whatever
-  bucketName: whatever
-  port: "443"
-  isSecure: true
+  hostname: minio.apps.hub.taco.moe
+  accessKey: my-access-key
+  secretAccessKey: super-secret-key
+  bucketName: quay # You must create this bucket BEFORE installing Quay!!
+  port: "443" # Must be a string
+  isSecure: true # Must be a boolean. Disable if you aren't using TLS

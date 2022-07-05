@@ -1,7 +1,13 @@
 .PHONY: install uninstall
 
 install:
-	oc create -f ./manifests
+	helm install \
+            --create-namespace \
+            --namespace quay-enterprise \
+            quay-enterprise .
 
 uninstall:
-	oc delete -f ./manifests
+	helm uninstall \
+             --namespace quay-enterprise\
+             quay-enterprise
+	oc delete project quay-enterprise

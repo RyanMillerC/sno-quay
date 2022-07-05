@@ -13,7 +13,11 @@ that you use MinIO, any S3 compatible storage should work.
 
 ## Installing
 
-Update `./values.yaml` with values for your environment. Then, run:
+**First, install the Quay Operator from Operator Hub! (Install to "All
+Namespaces")**
+
+After installing the operator, update `./values.yaml` with values for your
+environment. Then, run:
 
 ```bash
 $ make install

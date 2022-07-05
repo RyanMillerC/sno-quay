@@ -9,7 +9,7 @@ stringData:
           secret_key: {{ .Values.objectStorage.secretAccessKey }}
           bucket_name: {{ .Values.objectStorage.bucketName }}
           port: "{{ .Values.objectStorage.port }}"
-          is_secure: "{{ .Values.objectStorage.isSecure }}"
+          is_secure: {{ .Values.objectStorage.isSecure }}
           storage_path: /datastorage/registry
     DISTRIBUTED_STORAGE_DEFAULT_LOCATIONS: []
     DISTRIBUTED_STORAGE_PREFERENCE:

@@ -13,15 +13,12 @@ that you use MinIO, any S3 compatible storage should work.
 
 ## Installing
 
-**First, install the Quay Operator from Operator Hub! (Install to "All
-Namespaces")**
-
-After installing the operator, update `./values.yaml` with values for your
-environment. Then, run:
-
-```bash
-$ make install
-```
+* **Install the Quay Operator from Operator Hub! (Install to "All
+  Namespaces")**
+* Create an *Access Key/Secret Access Key* and *Bucket* in your S3-compatible
+  storage provider
+* Update *./values.yaml* with storage information
+* Finally, run: `make install`
 
 You can monitor the deployment with:
 
